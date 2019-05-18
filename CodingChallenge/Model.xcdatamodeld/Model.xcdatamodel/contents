@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
+        <attribute name="datetime_local" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
             <userInfo>
                 <entry key="JSONKeyPath" value="id"/>
@@ -11,11 +12,27 @@
                 <entry key="JSONKeyPath" value="title"/>
             </userInfo>
         </attribute>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="venue"/>
+            </userInfo>
+        </relationship>
         <userInfo>
-            <entry key="JSONKeyPath" value="title"/>
+            <entry key="identityAttributes" value="identifier"/>
+        </userInfo>
+    </entity>
+    <entity name="Venue" representedClassName="Venue" syncable="YES" codeGenerationType="class">
+        <attribute name="display_location" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="display_location"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="identityAttributes" value="display_location"/>
         </userInfo>
     </entity>
     <elements>
-        <element name="Event" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Event" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Venue" positionX="-54" positionY="18" width="128" height="60"/>
     </elements>
 </model>

@@ -52,9 +52,14 @@ class EventSpec: QuickSpec {
                             expect(items.count).to(beGreaterThan(0))
                             expect(items.first).toNot(beNil())
                             if let actual = items.first {
-                                expect(actual.title).to(beAKindOf(String.self))
-                                expect(actual.identifier).to(beAKindOf(Int16.self))
+                                expect(actual.title).to(beAnInstanceOf(String.self))
+                                expect(actual.identifier).to(beAnInstanceOf(Int16.self))
                                 expect(actual.identifier).to(beGreaterThan(0))
+
+                                expect(actual.venue).toNot(beNil())
+                                expect(actual.venue).to(beAnInstanceOf(Venue.self))
+                                expect(actual.venue?.display_location).to(beAnInstanceOf(String.self))
+                                
                             }
                             
                             done()
