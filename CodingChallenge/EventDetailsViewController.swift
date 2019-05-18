@@ -9,10 +9,16 @@
 import UIKit
 
 class EventDetailsViewController: UIViewController {
+    
+    weak var event: Event?
+    
+    @IBOutlet weak var titleLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.titleLabel?.text = self.event?.title
     }
 
 

@@ -45,12 +45,19 @@ class EventsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EventTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
 
+        cell.event = self.events[indexPath.row]
         cell.titleTextLabel?.text = self.events[indexPath.row].title
         
         return cell
     }
-    
-    
+
+    // This function is called before the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let vc = segue.destination as! EventDetailsViewController
+        let cell = sender as! EventTableViewCell
+        vc.event = cell.event!
+    }
     
 }
 
