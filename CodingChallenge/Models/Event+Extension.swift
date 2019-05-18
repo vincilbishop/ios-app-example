@@ -65,7 +65,7 @@ extension Event {
                 Alamofire.SessionManager.default.request(Request.query("Texas Ranger")).responseInsert(jsonSerializer: jsonTransformer, context: context.managedObjectContext(), type: Many<Event>.self, completionHandler: { (response) in
                     
                     save()
-                    
+                   
                     if (completion != nil) {
                         completion!(response)
                     }

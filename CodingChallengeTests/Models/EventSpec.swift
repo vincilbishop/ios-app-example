@@ -53,16 +53,40 @@ class EventSpec: QuickSpec {
                             expect(items.first).toNot(beNil())
                             if let actual = items.first {
                                 expect(actual.title).to(beAnInstanceOf(String.self))
-                                expect(actual.identifier).to(beAnInstanceOf(Int16.self))
-                                expect(actual.identifier).to(beGreaterThan(0))
-
-                                expect(actual.venue).toNot(beNil())
-                                expect(actual.venue).to(beAnInstanceOf(Venue.self))
-                                expect(actual.venue?.display_location).to(beAnInstanceOf(String.self))
-                                
+                                 expect(actual.identifier).to(beAnInstanceOf(Int64.self))
+                                 expect(actual.identifier).to(beGreaterThan(0))
+                                expect(actual.venue_name).to(beAnInstanceOf(String.self))
                             }
                             
                             done()
+                        })
+                    }
+                }
+                
+                it("does not duplicate identifiers") {
+                    var actual: [Event] = try! AppData.shared.db.fetch(FetchRequest<Event>())
+                    expect(actual.count).to( equal(0) )
+                    
+                    waitUntil { done in
+                        Event.getEvents({ (response) in
+                            
+                            actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
+                            expect(actual.count).to( equal(10) )
+                            
+                            Event.getEvents({ (response) in
+                                
+                                actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
+                                expect(actual.count).to( equal(10) )
+                                
+                                Event.getEvents({ (response) in
+                                    
+                                    actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
+                                    expect(actual.count).to( equal(10) )
+                                    
+                                    done()
+                                })
+                            })
+                            
                         })
                     }
                 }

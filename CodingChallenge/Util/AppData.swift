@@ -11,11 +11,6 @@ import SugarRecord
 
 public class AppData {
     
-    public static var dataURL: URL {
-        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return url
-    }
-    
     public static var shared = {
         return AppData()
     }()
@@ -25,7 +20,7 @@ public class AppData {
     }
     
     public static func db() -> CoreDataDefaultStorage  {
-        let store = CoreDataStore.url(self.dataURL.appendingPathComponent("AppData.sql"))
+        let store =  CoreDataStore.named("AppData.sql")
         let bundle = Bundle(for: AppData.self)
         let model = CoreDataObjectModel.merged([bundle])
         let defaultStorage = try! CoreDataDefaultStorage(store: store, model: model)
