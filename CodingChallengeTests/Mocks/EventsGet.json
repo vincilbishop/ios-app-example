@@ -1,0 +1,2712 @@
+{
+    "meta": {
+        "geolocation": null,
+        "per_page": 10,
+        "total": 120,
+        "took": 5,
+        "page": 1
+    },
+    "in_hand": {},
+    "events": [
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4612964,
+            "stats": {
+                "visible_listing_count": 305,
+                "dq_bucket_counts": [
+                    36,
+                    81,
+                    58,
+                    32,
+                    26,
+                    35,
+                    47,
+                    0
+                ],
+                "average_price": 41,
+                "lowest_price_good_deals": 9,
+                "median_price": 32,
+                "listing_count": 317,
+                "lowest_price": 9,
+                "highest_price": 198
+            },
+            "title": "St. Louis Cardinals at Texas Rangers",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.802,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-06T00:00:00Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-18T15:05:00",
+            "visible_until_utc": "2019-05-19T00:05:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/st-louis-cardinals-00eb09/27/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0C2340",
+                            "#C41E3A"
+                        ],
+                        "iconic": "#C41E3A",
+                        "primary": [
+                            "#0C2340",
+                            "#C41E3A"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/st-louis-cardinals-00eb09/27/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 27,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 118
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.76,
+                    "location": {
+                        "lat": 38.6226,
+                        "lon": -90.1928
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 118,
+                    "short_name": "Cardinals",
+                    "home_venue_id": 27,
+                    "slug": "st-louis-cardinals",
+                    "divisions": [
+                        {
+                            "display_name": "National League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "National League Central",
+                            "short_name": "NL Central",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "national-league-central"
+                        }
+                    ],
+                    "name": "St. Louis Cardinals",
+                    "url": "https://seatgeek.com/st-louis-cardinals-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/32629638@N07/10540105703/in/photolist-bXeKRT-ayi31i-aykJwj-aykJ9E-aykJfC-ayi2UX-ahHhix-ahHgQX-ahL78s-ahL7H3-ahL6Tb-ahL5YL-ahL8co-ahL7XY-ahHi28-ahHkea-ahL6yo-ahL5fE-8Ax5Ub-dhHim7-ehDbEe-dP5zYF-eabzoo-dP5yzB-dNjLsJ-q5nU6e-8uFttA-8uCqmV-8uCpaz-7UkstJ-ehDcYK-aro63Q-aroagq-aroaCh-aro6oJ-aro6a7-arkrdp-aroauG-aro6LN-aroa6Q-arkrwD-aro6uh-cwBqd7-8SRxPN-a4rcNr-a4rbQ6-a4raWe-h4oNdp-81ytpE-kcK2Y"
+                }
+            ],
+            "url": "https://seatgeek.com/cardinals-at-rangers-tickets/5-18-2019-arlington-texas-globe-life-park/mlb/4612964",
+            "created_at": "2018-10-31T16:15:49",
+            "popularity": 0.895,
+            "venue": {
+                "links": [],
+                "metro_code": 623,
+                "postal_code": "76011",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 16,
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "display_location": "Arlington, TX",
+                "state": "TX",
+                "score": 0.84144884,
+                "location": {
+                    "lat": 32.7506,
+                    "lon": -97.0824
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-06T00:00:00Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 66,
+                "address": "1000 Ballpark Way",
+                "capacity": 49115,
+                "slug": "globe-life-park",
+                "name": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Globe Life Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Cardinals at Rangers",
+            "datetime_utc": "2019-05-18T20:05:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4645917,
+            "stats": {
+                "visible_listing_count": 182,
+                "dq_bucket_counts": [
+                    4,
+                    29,
+                    81,
+                    28,
+                    24,
+                    26,
+                    5,
+                    0
+                ],
+                "average_price": 76,
+                "lowest_price_good_deals": 27,
+                "median_price": 70,
+                "listing_count": 196,
+                "lowest_price": 27,
+                "highest_price": 330
+            },
+            "title": "St. Louis Cardinals at Texas Rangers",
+            "announce_date": "2018-11-22T00:00:00",
+            "score": 0.777,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-06T00:00:00Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-19T14:05:00",
+            "visible_until_utc": "2019-05-19T23:05:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/st-louis-cardinals-00eb09/27/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0C2340",
+                            "#C41E3A"
+                        ],
+                        "iconic": "#C41E3A",
+                        "primary": [
+                            "#0C2340",
+                            "#C41E3A"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/st-louis-cardinals-00eb09/27/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 27,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 118
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.76,
+                    "location": {
+                        "lat": 38.6226,
+                        "lon": -90.1928
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 118,
+                    "short_name": "Cardinals",
+                    "home_venue_id": 27,
+                    "slug": "st-louis-cardinals",
+                    "divisions": [
+                        {
+                            "display_name": "National League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "National League Central",
+                            "short_name": "NL Central",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "national-league-central"
+                        }
+                    ],
+                    "name": "St. Louis Cardinals",
+                    "url": "https://seatgeek.com/st-louis-cardinals-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/32629638@N07/10540105703/in/photolist-bXeKRT-ayi31i-aykJwj-aykJ9E-aykJfC-ayi2UX-ahHhix-ahHgQX-ahL78s-ahL7H3-ahL6Tb-ahL5YL-ahL8co-ahL7XY-ahHi28-ahHkea-ahL6yo-ahL5fE-8Ax5Ub-dhHim7-ehDbEe-dP5zYF-eabzoo-dP5yzB-dNjLsJ-q5nU6e-8uFttA-8uCqmV-8uCpaz-7UkstJ-ehDcYK-aro63Q-aroagq-aroaCh-aro6oJ-aro6a7-arkrdp-aroauG-aro6LN-aroa6Q-arkrwD-aro6uh-cwBqd7-8SRxPN-a4rcNr-a4rbQ6-a4raWe-h4oNdp-81ytpE-kcK2Y"
+                }
+            ],
+            "url": "https://seatgeek.com/cardinals-at-rangers-tickets/5-19-2019-arlington-texas-globe-life-park/mlb/4645917",
+            "created_at": "2018-11-22T16:03:01",
+            "popularity": 0.881,
+            "venue": {
+                "links": [],
+                "metro_code": 623,
+                "postal_code": "76011",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 16,
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "display_location": "Arlington, TX",
+                "state": "TX",
+                "score": 0.84144884,
+                "location": {
+                    "lat": 32.7506,
+                    "lon": -97.0824
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-06T00:00:00Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 66,
+                "address": "1000 Ballpark Way",
+                "capacity": 49115,
+                "slug": "globe-life-park",
+                "name": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Globe Life Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Cardinals at Rangers",
+            "datetime_utc": "2019-05-19T19:05:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4612965,
+            "stats": {
+                "visible_listing_count": 350,
+                "dq_bucket_counts": [
+                    37,
+                    91,
+                    101,
+                    43,
+                    45,
+                    61,
+                    44,
+                    0
+                ],
+                "average_price": 35,
+                "lowest_price_good_deals": 7,
+                "median_price": 26,
+                "listing_count": 420,
+                "lowest_price": 7,
+                "highest_price": 1222
+            },
+            "title": "Seattle Mariners at Texas Rangers",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.701,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-06T00:00:00Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-20T19:05:00",
+            "visible_until_utc": "2019-05-21T04:05:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "iconic": "#0C2C56",
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 13,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 116
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 47.5914,
+                        "lon": -122.333
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 116,
+                    "short_name": "Mariners",
+                    "home_venue_id": 13,
+                    "slug": "seattle-mariners",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                }
+            ],
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/5-20-2019-arlington-texas-globe-life-park/mlb/4612965",
+            "created_at": "2018-10-31T16:15:49",
+            "popularity": 0.807,
+            "venue": {
+                "links": [],
+                "metro_code": 623,
+                "postal_code": "76011",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 16,
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "display_location": "Arlington, TX",
+                "state": "TX",
+                "score": 0.84144884,
+                "location": {
+                    "lat": 32.7506,
+                    "lon": -97.0824
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-06T00:00:00Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 66,
+                "address": "1000 Ballpark Way",
+                "capacity": 49115,
+                "slug": "globe-life-park",
+                "name": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Globe Life Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Mariners at Rangers",
+            "datetime_utc": "2019-05-21T00:05:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4609364,
+            "stats": {
+                "visible_listing_count": 387,
+                "dq_bucket_counts": [
+                    43,
+                    113,
+                    118,
+                    49,
+                    52,
+                    59,
+                    63,
+                    0
+                ],
+                "average_price": 34,
+                "lowest_price_good_deals": 6,
+                "median_price": 26,
+                "listing_count": 498,
+                "lowest_price": 6,
+                "highest_price": 268
+            },
+            "title": "Seattle Mariners at Texas Rangers",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.697,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-06T00:00:00Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-21T19:05:00",
+            "visible_until_utc": "2019-05-22T04:05:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "iconic": "#0C2C56",
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 13,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 116
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 47.5914,
+                        "lon": -122.333
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 116,
+                    "short_name": "Mariners",
+                    "home_venue_id": 13,
+                    "slug": "seattle-mariners",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                }
+            ],
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/5-21-2019-arlington-texas-globe-life-park/mlb/4609364",
+            "created_at": "2018-10-30T16:14:29",
+            "popularity": 0.798,
+            "venue": {
+                "links": [],
+                "metro_code": 623,
+                "postal_code": "76011",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 16,
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "display_location": "Arlington, TX",
+                "state": "TX",
+                "score": 0.84144884,
+                "location": {
+                    "lat": 32.7506,
+                    "lon": -97.0824
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-06T00:00:00Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 66,
+                "address": "1000 Ballpark Way",
+                "capacity": 49115,
+                "slug": "globe-life-park",
+                "name": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Globe Life Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Mariners at Rangers",
+            "datetime_utc": "2019-05-22T00:05:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4612963,
+            "stats": {
+                "visible_listing_count": 343,
+                "dq_bucket_counts": [
+                    53,
+                    74,
+                    93,
+                    40,
+                    54,
+                    46,
+                    65,
+                    0
+                ],
+                "average_price": 34,
+                "lowest_price_good_deals": 6,
+                "median_price": 27,
+                "listing_count": 422,
+                "lowest_price": 6,
+                "highest_price": 410
+            },
+            "title": "Seattle Mariners at Texas Rangers",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.699,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-06T00:00:00Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-22T13:05:00",
+            "visible_until_utc": "2019-05-22T22:05:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "iconic": "#0C2C56",
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 13,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 116
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 47.5914,
+                        "lon": -122.333
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 116,
+                    "short_name": "Mariners",
+                    "home_venue_id": 13,
+                    "slug": "seattle-mariners",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                }
+            ],
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/5-22-2019-arlington-texas-globe-life-park/mlb/4612963",
+            "created_at": "2018-10-31T16:15:49",
+            "popularity": 0.796,
+            "venue": {
+                "links": [],
+                "metro_code": 623,
+                "postal_code": "76011",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 16,
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "display_location": "Arlington, TX",
+                "state": "TX",
+                "score": 0.84144884,
+                "location": {
+                    "lat": 32.7506,
+                    "lon": -97.0824
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-06T00:00:00Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 66,
+                "address": "1000 Ballpark Way",
+                "capacity": 49115,
+                "slug": "globe-life-park",
+                "name": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Globe Life Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Mariners at Rangers",
+            "datetime_utc": "2019-05-22T18:05:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4609828,
+            "stats": {
+                "visible_listing_count": 104,
+                "dq_bucket_counts": [
+                    5,
+                    39,
+                    46,
+                    22,
+                    18,
+                    10,
+                    11,
+                    0
+                ],
+                "average_price": 168,
+                "lowest_price_good_deals": 31,
+                "median_price": 77,
+                "listing_count": 150,
+                "lowest_price": 31,
+                "highest_price": 4586
+            },
+            "title": "Texas Rangers at Los Angeles Angels",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.723,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2018-04-03T01:50:48Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-24T19:07:00",
+            "visible_until_utc": "2019-05-25T06:07:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#003263",
+                            "#BA0021"
+                        ],
+                        "iconic": "#003263",
+                        "primary": [
+                            "#003263",
+                            "#BA0021"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 28,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.72,
+                    "location": {
+                        "lat": 33.7983,
+                        "lon": -117.885
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Angels",
+                    "home_venue_id": 28,
+                    "slug": "los-angeles-angels",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Los Angeles Angels",
+                    "url": "https://seatgeek.com/los-angeles-angels-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/15132846@N00/5651019539/in/photolist-9BmXen-6yxtuL-ce6R2W-8PVqdC-8PSjMe-8PSk6t-6ytkZ4-6ytmop-8PSj9Z-8PVoZC-f8rjC4-6ytkTM-6ytmig-8PSiTH-f8FAzL-aaJtrM-8PVpNm-4KFomL-aaJuY6-9Ur2vg-6yxtFQ-6ytkHZ-8ufxtj-mYEcGR-8PVpCJ-8PSiQx-8CNDwq-8PSkpe-8PSjut-6ytmMr-8PSkiH-8PVpju-8PSkcK-6ytmTF-6ytkFk-aaH6kM-6ytmBX-6ytm7F-6ytkCn-7xDESf-6yxts5-5dxfV3-5dxgi7-5dsUUK-5dsSFi-6yxsKw-9UG7wp-9UtWEU-cMMqE-aaKX9w"
+                }
+            ],
+            "url": "https://seatgeek.com/rangers-at-angels-tickets/5-24-2019-anaheim-california-angel-stadium-of-anaheim/mlb/4609828",
+            "created_at": "2018-10-30T16:15:41",
+            "popularity": 0.799,
+            "venue": {
+                "links": [],
+                "metro_code": 803,
+                "postal_code": "92806",
+                "timezone": "America/Los_Angeles",
+                "has_upcoming_events": true,
+                "id": 28,
+                "city": "Anaheim",
+                "extended_address": "Anaheim, CA 92806",
+                "display_location": "Anaheim, CA",
+                "state": "CA",
+                "score": 0.7908901,
+                "location": {
+                    "lat": 33.7983,
+                    "lon": -117.885
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2018-04-03T01:50:48Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 61,
+                "address": "2000 East Gene Autry Way",
+                "capacity": 45060,
+                "slug": "angel-stadium-of-anaheim",
+                "name": "Angel Stadium of Anaheim",
+                "url": "https://seatgeek.com/venues/angel-stadium-of-anaheim/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Angel Stadium of Anaheim"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Rangers at Angels",
+            "datetime_utc": "2019-05-25T02:07:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4609827,
+            "stats": {
+                "visible_listing_count": 127,
+                "dq_bucket_counts": [
+                    16,
+                    41,
+                    55,
+                    32,
+                    24,
+                    31,
+                    15,
+                    0
+                ],
+                "average_price": 84,
+                "lowest_price_good_deals": 21,
+                "median_price": 60,
+                "listing_count": 210,
+                "lowest_price": 21,
+                "highest_price": 350
+            },
+            "title": "Texas Rangers at Los Angeles Angels",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.741,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2018-04-03T01:50:48Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-25T19:07:00",
+            "visible_until_utc": "2019-05-26T06:07:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#003263",
+                            "#BA0021"
+                        ],
+                        "iconic": "#003263",
+                        "primary": [
+                            "#003263",
+                            "#BA0021"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 28,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.72,
+                    "location": {
+                        "lat": 33.7983,
+                        "lon": -117.885
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Angels",
+                    "home_venue_id": 28,
+                    "slug": "los-angeles-angels",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Los Angeles Angels",
+                    "url": "https://seatgeek.com/los-angeles-angels-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/15132846@N00/5651019539/in/photolist-9BmXen-6yxtuL-ce6R2W-8PVqdC-8PSjMe-8PSk6t-6ytkZ4-6ytmop-8PSj9Z-8PVoZC-f8rjC4-6ytkTM-6ytmig-8PSiTH-f8FAzL-aaJtrM-8PVpNm-4KFomL-aaJuY6-9Ur2vg-6yxtFQ-6ytkHZ-8ufxtj-mYEcGR-8PVpCJ-8PSiQx-8CNDwq-8PSkpe-8PSjut-6ytmMr-8PSkiH-8PVpju-8PSkcK-6ytmTF-6ytkFk-aaH6kM-6ytmBX-6ytm7F-6ytkCn-7xDESf-6yxts5-5dxfV3-5dxgi7-5dsUUK-5dsSFi-6yxsKw-9UG7wp-9UtWEU-cMMqE-aaKX9w"
+                }
+            ],
+            "url": "https://seatgeek.com/rangers-at-angels-tickets/5-25-2019-anaheim-california-angel-stadium-of-anaheim/mlb/4609827",
+            "created_at": "2018-10-30T16:15:41",
+            "popularity": 0.81,
+            "venue": {
+                "links": [],
+                "metro_code": 803,
+                "postal_code": "92806",
+                "timezone": "America/Los_Angeles",
+                "has_upcoming_events": true,
+                "id": 28,
+                "city": "Anaheim",
+                "extended_address": "Anaheim, CA 92806",
+                "display_location": "Anaheim, CA",
+                "state": "CA",
+                "score": 0.7908901,
+                "location": {
+                    "lat": 33.7983,
+                    "lon": -117.885
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2018-04-03T01:50:48Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 61,
+                "address": "2000 East Gene Autry Way",
+                "capacity": 45060,
+                "slug": "angel-stadium-of-anaheim",
+                "name": "Angel Stadium of Anaheim",
+                "url": "https://seatgeek.com/venues/angel-stadium-of-anaheim/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Angel Stadium of Anaheim"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Rangers at Angels",
+            "datetime_utc": "2019-05-26T02:07:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4609826,
+            "stats": {
+                "visible_listing_count": 108,
+                "dq_bucket_counts": [
+                    4,
+                    47,
+                    41,
+                    16,
+                    17,
+                    16,
+                    14,
+                    0
+                ],
+                "average_price": 151,
+                "lowest_price_good_deals": 20,
+                "median_price": 71,
+                "listing_count": 155,
+                "lowest_price": 20,
+                "highest_price": 4586
+            },
+            "title": "Texas Rangers at Los Angeles Angels",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.701,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2018-04-03T01:50:48Z",
+                "method": "PDF417"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-26T13:07:00",
+            "visible_until_utc": "2019-05-27T00:07:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#003263",
+                            "#BA0021"
+                        ],
+                        "iconic": "#003263",
+                        "primary": [
+                            "#003263",
+                            "#BA0021"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/los-angeles-angels-2044d3/28/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 28,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.72,
+                    "location": {
+                        "lat": 33.7983,
+                        "lon": -117.885
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Angels",
+                    "home_venue_id": 28,
+                    "slug": "los-angeles-angels",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Los Angeles Angels",
+                    "url": "https://seatgeek.com/los-angeles-angels-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/15132846@N00/5651019539/in/photolist-9BmXen-6yxtuL-ce6R2W-8PVqdC-8PSjMe-8PSk6t-6ytkZ4-6ytmop-8PSj9Z-8PVoZC-f8rjC4-6ytkTM-6ytmig-8PSiTH-f8FAzL-aaJtrM-8PVpNm-4KFomL-aaJuY6-9Ur2vg-6yxtFQ-6ytkHZ-8ufxtj-mYEcGR-8PVpCJ-8PSiQx-8CNDwq-8PSkpe-8PSjut-6ytmMr-8PSkiH-8PVpju-8PSkcK-6ytmTF-6ytkFk-aaH6kM-6ytmBX-6ytm7F-6ytkCn-7xDESf-6yxts5-5dxfV3-5dxgi7-5dsUUK-5dsSFi-6yxsKw-9UG7wp-9UtWEU-cMMqE-aaKX9w"
+                }
+            ],
+            "url": "https://seatgeek.com/rangers-at-angels-tickets/5-26-2019-anaheim-california-angel-stadium-of-anaheim/mlb/4609826",
+            "created_at": "2018-10-30T16:15:41",
+            "popularity": 0.779,
+            "venue": {
+                "links": [],
+                "metro_code": 803,
+                "postal_code": "92806",
+                "timezone": "America/Los_Angeles",
+                "has_upcoming_events": true,
+                "id": 28,
+                "city": "Anaheim",
+                "extended_address": "Anaheim, CA 92806",
+                "display_location": "Anaheim, CA",
+                "state": "CA",
+                "score": 0.7908901,
+                "location": {
+                    "lat": 33.7983,
+                    "lon": -117.885
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2018-04-03T01:50:48Z",
+                    "method": "PDF417"
+                },
+                "num_upcoming_events": 61,
+                "address": "2000 East Gene Autry Way",
+                "capacity": 45060,
+                "slug": "angel-stadium-of-anaheim",
+                "name": "Angel Stadium of Anaheim",
+                "url": "https://seatgeek.com/venues/angel-stadium-of-anaheim/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Angel Stadium of Anaheim"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Rangers at Angels",
+            "datetime_utc": "2019-05-26T20:07:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4612876,
+            "stats": {
+                "visible_listing_count": 733,
+                "dq_bucket_counts": [
+                    88,
+                    168,
+                    302,
+                    255,
+                    204,
+                    102,
+                    32,
+                    0
+                ],
+                "average_price": 179,
+                "lowest_price_good_deals": 25,
+                "median_price": 76,
+                "listing_count": 1289,
+                "lowest_price": 25,
+                "highest_price": 7895
+            },
+            "title": "Texas Rangers at Seattle Mariners",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.671,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-06-21T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-27T18:10:00",
+            "visible_until_utc": "2019-05-28T05:10:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "iconic": "#0C2C56",
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 13,
+                    "stats": {
+                        "event_count": 116
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 47.5914,
+                        "lon": -122.333
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 116,
+                    "short_name": "Mariners",
+                    "home_venue_id": 13,
+                    "slug": "seattle-mariners",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                }
+            ],
+            "url": "https://seatgeek.com/rangers-at-mariners-tickets/5-27-2019-seattle-washington-t-mobile-park/mlb/4612876",
+            "created_at": "2018-10-31T16:15:18",
+            "popularity": 0.735,
+            "venue": {
+                "links": [],
+                "metro_code": 819,
+                "postal_code": "98134",
+                "timezone": "America/Los_Angeles",
+                "has_upcoming_events": true,
+                "id": 13,
+                "city": "Seattle",
+                "extended_address": "Seattle, WA 98134",
+                "display_location": "Seattle, WA",
+                "state": "WA",
+                "score": 0.7635878,
+                "location": {
+                    "lat": 47.5914,
+                    "lon": -122.333
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-06-21T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 61,
+                "address": "1250 First Avenue",
+                "capacity": 47116,
+                "slug": "t-mobile-park",
+                "name": "T-Mobile Park",
+                "url": "https://seatgeek.com/venues/t-mobile-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "T-Mobile Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Rangers at Mariners",
+            "datetime_utc": "2019-05-28T01:10:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "conditional": false,
+            "is_open": false,
+            "id": 4612875,
+            "stats": {
+                "visible_listing_count": 710,
+                "dq_bucket_counts": [
+                    205,
+                    56,
+                    107,
+                    131,
+                    216,
+                    344,
+                    66,
+                    0
+                ],
+                "average_price": 76,
+                "lowest_price_good_deals": 15,
+                "median_price": 67,
+                "listing_count": 1263,
+                "lowest_price": 15,
+                "highest_price": 693
+            },
+            "title": "Texas Rangers at Seattle Mariners",
+            "announce_date": "2018-10-30T00:00:00",
+            "score": 0.652,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-06-21T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "baseball",
+                    "parent_id": 1000000,
+                    "id": 1010000
+                },
+                {
+                    "name": "mlb",
+                    "parent_id": 1010000,
+                    "id": 1010100
+                }
+            ],
+            "type": "mlb",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2019-05-28T19:10:00",
+            "visible_until_utc": "2019-05-29T06:10:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "iconic": "#0C2C56",
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/seattle-mariners-6ce8ef/13/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 13,
+                    "stats": {
+                        "event_count": 116
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 47.5914,
+                        "lon": -122.333
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 116,
+                    "short_name": "Mariners",
+                    "home_venue_id": 13,
+                    "slug": "seattle-mariners",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#0038A8",
+                            "#C0111F"
+                        ],
+                        "iconic": "#C0111F",
+                        "primary": [
+                            "#0038A8",
+                            "#C0111F"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/texas-rangers-0b3f80/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 16,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 121
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 32.7506,
+                        "lon": -97.0824
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "baseball",
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "mlb",
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "mlb",
+                    "num_upcoming_events": 121,
+                    "short_name": "Rangers",
+                    "home_venue_id": 16,
+                    "slug": "texas-rangers",
+                    "divisions": [
+                        {
+                            "display_name": "American League",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "League",
+                            "taxonomy_id": 1010100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "American League West",
+                            "short_name": "AL West",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1010100,
+                            "slug": "american-league-west"
+                        }
+                    ],
+                    "name": "Texas Rangers",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r"
+                }
+            ],
+            "url": "https://seatgeek.com/rangers-at-mariners-tickets/5-28-2019-seattle-washington-t-mobile-park/mlb/4612875",
+            "created_at": "2018-10-31T16:15:18",
+            "popularity": 0.717,
+            "venue": {
+                "links": [],
+                "metro_code": 819,
+                "postal_code": "98134",
+                "timezone": "America/Los_Angeles",
+                "has_upcoming_events": true,
+                "id": 13,
+                "city": "Seattle",
+                "extended_address": "Seattle, WA 98134",
+                "display_location": "Seattle, WA",
+                "state": "WA",
+                "score": 0.7635878,
+                "location": {
+                    "lat": 47.5914,
+                    "lon": -122.333
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-06-21T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 61,
+                "address": "1250 First Avenue",
+                "capacity": 47116,
+                "slug": "t-mobile-park",
+                "name": "T-Mobile Park",
+                "url": "https://seatgeek.com/venues/t-mobile-park/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "T-Mobile Park"
+            },
+            "enddatetime_utc": null,
+            "short_title": "Rangers at Mariners",
+            "datetime_utc": "2019-05-29T02:10:00",
+            "datetime_tbd": false
+        }
+    ]
+}
