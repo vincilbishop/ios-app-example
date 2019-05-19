@@ -30,6 +30,7 @@ This project uses [Cocoapods](https://cocoapods.org/) for dependency management.
 To build the project:
 
 * Clone the repository: `git clone https://github.com/vincilbishop/iOS-Coding-Challenge.git`
+* `cd iOS-Coding-Challenge`
 * `pod install`
 * `Open CodingChallenge.xcworkspace`
 
