@@ -21,6 +21,7 @@ This implementation is a type ahead search app against the Seat Geek API. The ty
 * Adjust detail header / navigation bar styling to match comp
 * Test on multiple form factors
 * Add more view controller unit tests
+* Correct date formatting
 
 #### Development
 
