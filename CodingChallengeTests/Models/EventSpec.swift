@@ -20,10 +20,6 @@ class EventSpec: QuickSpec {
                 try! AppData.shared.db.removeStore()
             }
             
-            context("Model Operation") {
-               
-            }
-            
             context("Network Operations") {
                 beforeEach {
                    OHHTTPStubs.mockAppResponses()

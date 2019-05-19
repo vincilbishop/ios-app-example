@@ -23,7 +23,6 @@ class AppDataSpec: QuickSpec {
                 catch _ {
                     // There was an error in the operation
                 }
-                
             }
             
             context("Insert Tests") {

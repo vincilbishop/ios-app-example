@@ -33,8 +33,6 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
         
         self.tableView.tableHeaderView = searchController.searchBar
         self.searchController.searchResultsUpdater = self
-        
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,8 +47,6 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
         guard let queryString = query else {
             return
         }
-        
-        // Debounce
         
         // Update Local Fetch Request
         self.fetchRequest = FetchRequest<Event>().filtered(with: NSPredicate(format: "title CONTAINS[cd] %@", queryString)).sorted(with: "datetime_local", ascending: true)

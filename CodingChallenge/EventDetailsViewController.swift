@@ -20,11 +20,8 @@ class EventDetailsViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel?
     @IBOutlet weak var dateTimeLabel: UILabel?
     
-   
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         self.titleLabel?.text = self.event?.title
         self.locationLabel?.text = self.event?.venue_name
@@ -32,9 +29,7 @@ class EventDetailsViewController: UIViewController {
         
         let transformer = SDImageRoundCornerTransformer.init(radius: 12.0, corners: SDRectCorner.allCorners, borderWidth: 0.5, borderColor: UIColor.black)
         self.performerImageView?.sd_setImage(with: self.event?.imageUrl(), placeholderImage: UIImage(named: "placeholder"), context: [.imageTransformer: transformer])
-        
-        
-        
+
         self.configureFavoritesButton(self.event!.favorite)
         
     }
@@ -70,9 +65,5 @@ class EventDetailsViewController: UIViewController {
             self.event = contextEvent
             
         }
-        
     }
-    
-
 }
-
