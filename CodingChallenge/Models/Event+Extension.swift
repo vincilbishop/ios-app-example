@@ -41,7 +41,7 @@ extension Event {
         
     }
     
-    public static func getEvents(_ completion: ((_ response: DataResponse<Many<Event>>) -> Void)? = nil) -> Void  {
+    public static func getEvents(_ query: String, _ completion: ((_ response: DataResponse<Many<Event>>) -> Void)? = nil) -> Void  {
         
         let jsonTransformer = DataRequest.jsonTransformerSerializer { (responseInfo, result) -> Result<Any> in
             guard result.isSuccess else {
@@ -62,7 +62,7 @@ extension Event {
         do {
             _ = try AppData.shared.db.operation { (context, save) throws in
                 
-                Alamofire.SessionManager.default.request(Request.query("Texas Ranger")).responseInsert(jsonSerializer: jsonTransformer, context: context.managedObjectContext(), type: Many<Event>.self, completionHandler: { (response) in
+                Alamofire.SessionManager.default.request(Request.query(query)).responseInsert(jsonSerializer: jsonTransformer, context: context.managedObjectContext(), type: Many<Event>.self, completionHandler: { (response) in
                     
                     save()
                    

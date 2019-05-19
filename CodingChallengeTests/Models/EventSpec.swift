@@ -33,7 +33,7 @@ class EventSpec: QuickSpec {
                     var actual: [Event] = try! AppData.shared.db.fetch(FetchRequest<Event>())
                     expect(actual.count).to( equal(0) )
                     
-                    Event.getEvents()
+                    Event.getEvents("Texas Rangers")
                     
                     expect{
                         actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
@@ -46,7 +46,7 @@ class EventSpec: QuickSpec {
                     expect(items.count).to( equal(0) )
                     Nimble.AsyncDefaults.Timeout = 5
                     waitUntil { done in
-                        Event.getEvents({ (response) in
+                        Event.getEvents("Texas Rangers", { (response) in
                             
                             items = try! AppData.shared.db.fetch(FetchRequest<Event>())
                             expect(items.count).to(beGreaterThan(0))
@@ -68,17 +68,17 @@ class EventSpec: QuickSpec {
                     expect(actual.count).to( equal(0) )
                     
                     waitUntil { done in
-                        Event.getEvents({ (response) in
+                        Event.getEvents("Texas Rangers", { (response) in
                             
                             actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
                             expect(actual.count).to( equal(10) )
                             
-                            Event.getEvents({ (response) in
+                            Event.getEvents("Texas Rangers",  { (response) in
                                 
                                 actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
                                 expect(actual.count).to( equal(10) )
                                 
-                                Event.getEvents({ (response) in
+                                Event.getEvents("Texas Rangers", { (response) in
                                     
                                     actual = try! AppData.shared.db.fetch(FetchRequest<Event>())
                                     expect(actual.count).to( equal(10) )

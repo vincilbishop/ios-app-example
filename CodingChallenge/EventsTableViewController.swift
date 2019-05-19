@@ -9,34 +9,71 @@
 import UIKit
 import SugarRecord
 
-class EventsTableViewController: UITableViewController {
+class EventsTableViewController: UITableViewController, UISearchResultsUpdating {
     
     var observable: RequestObservable<Event>!
+    var fetchRequest: FetchRequest<Event>!
+    let searchController = UISearchController(searchResultsController: nil)
     
-    var events: [Event] = {
-        return try! AppData.shared.db.fetch(FetchRequest<Event>())
-    }()
+    var events: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.dimsBackgroundDuringPresentation = false
+        self.searchController.searchBar.showsCancelButton = true
+
+        self.tableView.tableHeaderView = searchController.searchBar
+        self.searchController.searchResultsUpdater = self
         // Do any additional setup after loading the view.
-        Event.getEvents()
+        // Event.getEvents("Texas Rangers")
         
-        self.observable = AppData.shared.db.observable(request: FetchRequest<Event>().sorted(with: "title", ascending: true))
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.searchController.dismiss(animated: false, completion: nil)
+    }
+    
+    // MARK: Search
+    func updateFetch(_ query: String?, _ updateFromApi: Bool = false) {
+        
+        guard let queryString = query else {
+            return
+        }
+        
+        // Debounce
+        
+        // Update Local Fetch Request
+        self.fetchRequest = FetchRequest<Event>().filtered(with: NSPredicate(format: "title CONTAINS[cd] %@", queryString)).sorted(with: "datetime_local", ascending: true)
+        self.events = try! AppData.shared.db.fetch(self.fetchRequest)
+        self.observable = AppData.shared.db.observable(request: self.fetchRequest)
         self.observable.observe { changes in
             switch (changes) {
-            case .initial(let objects):
-                print("\(objects.count) objects in the database")
-            case .update(let deletions, let insertions, let modifications):
-                print("\(deletions.count) deleted | \(insertions.count) inserted | \(modifications.count) modified")
+            case .initial( _):
                 self.tableView.reloadData()
-            case .error(_):
-                print("Something went wrong")
+            case .update( _, _, _):
+                self.tableView.reloadData()
+            case .error( _):
+                return
             }
-            
+        }
+        // Update from API
+        if (updateFromApi) {
+            Event.getEvents(queryString)
         }
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text, !searchText.isEmpty {
+            self.updateFetch(searchText, true)
+        }
+    }
+    
+    // MARK: UITableView
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.events.count
