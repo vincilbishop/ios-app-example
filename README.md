@@ -4,7 +4,7 @@ This example might help others understand how I think about building great softw
 
 #### Summary
 
-This implementation is a type ahead search app against the Seat Geek API. The type ahead updates a list of results as the search query changes. Results can be tapped to view them on a details screen. On the details screen the result can be favorited. On the type ahead screen, results matching the favorites list should show a visual indication that they are favorited.
+This implementation is a type ahead search app against the Seat Geek API. The type ahead updates a list of results as the search query changes. Results can be tapped to view them on a details screen. On the details screen the result can be favorited. On the type ahead screen, results matching the favorites list show a visual indication that they are favorited.
 
 #### Features
 
