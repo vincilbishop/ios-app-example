@@ -19,8 +19,7 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.tableView.reloadData()
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewDidLoad() {
@@ -41,6 +40,7 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.searchController.dismiss(animated: false, completion: nil)
     }
     
