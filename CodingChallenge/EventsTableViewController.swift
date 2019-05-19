@@ -20,10 +20,6 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = false
@@ -31,8 +27,12 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
         self.searchController.searchBar.searchBarStyle = .default
         self.searchController.searchBar.barStyle = .default
         
-        self.tableView.tableHeaderView = searchController.searchBar
+        self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchResultsUpdater = self
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
