@@ -82,8 +82,7 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EventTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
 
-        cell.event = self.events[indexPath.row]
-        cell.titleTextLabel?.text = self.events[indexPath.row].title
+        cell.configureWithEvent(self.events[indexPath.row])
         
         return cell
     }

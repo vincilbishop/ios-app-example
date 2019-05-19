@@ -10,6 +10,7 @@ target 'CodingChallenge' do
   pod 'AlamofireCoreData', '~> 2.0.0'
   pod 'AlamofireNetworkActivityLogger', '~> 2.3'
   pod 'Groot', '~> 3.0.1'
+  pod 'SDWebImage', '~> 5.0.3'
   pod 'SugarRecord/CoreData', '~> 3.1.2'
   
 

@@ -21,11 +21,28 @@
                 <entry key="JSONKeyPath" value="venue.display_location"/>
             </userInfo>
         </attribute>
+        <relationship name="performers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Performer" inverseName="event" inverseEntity="Performer" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="performers"/>
+            </userInfo>
+        </relationship>
         <userInfo>
             <entry key="identityAttributes" value="identifier"/>
         </userInfo>
     </entity>
+    <entity name="Performer" representedClassName="Performer" syncable="YES" codeGenerationType="class">
+        <attribute name="imageUrlString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="image"/>
+            </userInfo>
+        </attribute>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="performers" inverseEntity="Event" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttributes" value="imageUrlString"/>
+        </userInfo>
+    </entity>
     <elements>
-        <element name="Event" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Event" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Performer" positionX="-45" positionY="27" width="128" height="75"/>
     </elements>
 </model>

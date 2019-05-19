@@ -53,9 +53,16 @@ class EventSpec: QuickSpec {
                             expect(items.first).toNot(beNil())
                             if let actual = items.first {
                                 expect(actual.title).to(beAnInstanceOf(String.self))
-                                 expect(actual.identifier).to(beAnInstanceOf(Int64.self))
-                                 expect(actual.identifier).to(beGreaterThan(0))
+                                expect(actual.identifier).to(beAnInstanceOf(Int64.self))
+                                expect(actual.identifier).to(beGreaterThan(0))
                                 expect(actual.venue_name).to(beAnInstanceOf(String.self))
+                                expect(actual.performers).toNot(beNil())
+                                expect(actual.performers?.count).to(beGreaterThan(0))
+                                
+                                // Must give CoreData a change to lazy load the value else will be nil on unwrap
+                                let performersSet = actual.performers!
+                                let performers: [Performer] = performersSet.array as! [Performer]
+                                expect(performers.first!.imageUrlString).to(beAnInstanceOf(String.self))
                             }
                             
                             done()

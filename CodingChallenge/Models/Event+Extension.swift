@@ -36,10 +36,6 @@ extension Event {
             return try URLEncoding.default.encode(urlRequest, with: result.parameters)
         }
     }
-
-    public static func fromJSON() {
-        
-    }
     
     public static func getEvents(_ query: String, _ completion: ((_ response: DataResponse<Many<Event>>) -> Void)? = nil) -> Void  {
         
@@ -77,5 +73,18 @@ extension Event {
             print("Unexpected error: \(error).")
             
         }
+    }
+    
+    public func imageUrl() -> URL? {
+        // TODO: Ensure this is pulling the correct home/away team
+        let performersSet = self.performers!
+        let performersArray: [Performer] = performersSet.array as! [Performer]
+        if (performersArray.count > 0) {
+            if let imageUrlString = performersArray.first?.imageUrlString {
+                return URL(string: imageUrlString)
+            }
+        }
+        
+        return nil
     }
 }
