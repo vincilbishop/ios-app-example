@@ -9,7 +9,7 @@
 import UIKit
 import SugarRecord
 
-class EventsTableViewController: UITableViewController, UISearchResultsUpdating {
+class EventsTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
     
     var observable: RequestObservable<Event>!
     var fetchRequest: FetchRequest<Event>!
@@ -26,6 +26,7 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
         self.searchController.searchBar.showsCancelButton = true
         self.searchController.searchBar.searchBarStyle = .default
         self.searchController.searchBar.barStyle = .default
+        self.searchController.searchBar.delegate = self
         
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchResultsUpdater = self
@@ -42,9 +43,11 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     }
     
     // MARK: Search
-    func updateFetch(_ query: String?, _ updateFromApi: Bool = false) {
+    func updateFetch(_ query: String? = nil, _ updateFromApi: Bool = false) {
         
         guard let queryString = query else {
+            self.events = []
+            self.tableView.reloadData()
             return
         }
         
@@ -55,8 +58,10 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
         self.observable.observe { changes in
             switch (changes) {
             case .initial( _):
+                self.events = try! AppData.shared.db.fetch(self.fetchRequest)
                 self.tableView.reloadData()
             case .update( _, _, _):
+                self.events = try! AppData.shared.db.fetch(self.fetchRequest)
                 self.tableView.reloadData()
             case .error( _):
                 return
@@ -70,11 +75,14 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
-            self.updateFetch(searchText, true)
+            self.updateFetch(searchController.searchBar.text, true)
         } else {
-            self.events = []
-            self.tableView.reloadData()
+            self.updateFetch()
         }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.updateFetch()
     }
     
     // MARK: UITableView
