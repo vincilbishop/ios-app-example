@@ -25,22 +25,21 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.searchBar.showsCancelButton = true
-
+        self.searchController.searchBar.searchBarStyle = .default
+        self.searchController.searchBar.barStyle = .default
+        
         self.tableView.tableHeaderView = searchController.searchBar
         self.searchController.searchResultsUpdater = self
-        // Do any additional setup after loading the view.
-        // Event.getEvents("Texas Rangers")
         
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.searchController.dismiss(animated: false, completion: nil)
     }
     
@@ -76,6 +75,9 @@ class EventsTableViewController: UITableViewController, UISearchResultsUpdating 
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
             self.updateFetch(searchText, true)
+        } else {
+            self.events = []
+            self.tableView.reloadData()
         }
     }
     
