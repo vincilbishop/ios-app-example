@@ -25,7 +25,7 @@ class EventDetailsViewController: UIViewController {
         
         self.titleLabel?.text = self.event?.title
         self.locationLabel?.text = self.event?.venue_name
-        self.dateTimeLabel?.text = self.event?.datetime_local
+        self.dateTimeLabel?.text = self.event?.datetime_local?.toPrettyDateString()
         
         let transformer = SDImageRoundCornerTransformer.init(radius: 12.0, corners: SDRectCorner.allCorners, borderWidth: 0.5, borderColor: UIColor.black)
         self.performerImageView?.sd_setImage(with: self.event?.imageUrl(), placeholderImage: UIImage(named: "placeholder"), context: [.imageTransformer: transformer])

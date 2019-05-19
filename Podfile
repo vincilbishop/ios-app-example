@@ -13,8 +13,8 @@ target 'CodingChallenge' do
   pod 'Hex', '~> 6.0.0'
   pod 'SDWebImage', '~> 5.0.3'
   pod 'SugarRecord/CoreData', '~> 3.1.2'
+  pod 'SwiftDate', '~> 6.0.3'
   
-
   target 'CodingChallengeTests' do
     inherit! :search_paths
     # Pods for testing

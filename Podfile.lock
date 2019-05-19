@@ -29,6 +29,7 @@ PODS:
   - SDWebImage/Core (5.0.3)
   - SugarRecord/CoreData (3.1.2):
     - Result (~> 3.0)
+  - SwiftDate (6.0.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - Quick (= 2.1.0)
   - SDWebImage (~> 5.0.3)
   - SugarRecord/CoreData (~> 3.1.2)
+  - SwiftDate (~> 6.0.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -55,6 +57,7 @@ SPEC REPOS:
     - Result
     - SDWebImage
     - SugarRecord
+    - SwiftDate
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -68,7 +71,8 @@ SPEC CHECKSUMS:
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
+  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
 
-PODFILE CHECKSUM: 80eb39fc3738a91e76f4f5b409c51f3b2bc3fe7c
+PODFILE CHECKSUM: 0a9e7914d9e634c9745eafe72ca3af7717ceb98a
 
 COCOAPODS: 1.6.1

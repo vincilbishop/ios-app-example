@@ -21,6 +21,7 @@
 		FA62E32A22908A67007F4F53 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32922908A67007F4F53 /* EventsTableViewController.swift */; };
 		FA62E32C22908C81007F4F53 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32B22908C81007F4F53 /* EventTableViewCell.swift */; };
 		FA62E32E229109D0007F4F53 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */; };
+		FA62E332229130F7007F4F53 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E331229130F7007F4F53 /* String+Date.swift */; };
 		FAA6EE3822904029004D7B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EE3722904029004D7B9E /* AppDelegate.swift */; };
 		FAA6EE3A22904029004D7B9E /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EE3922904029004D7B9E /* EventDetailsViewController.swift */; };
 		FAA6EE3D22904029004D7B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EE3B22904029004D7B9E /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		FA62E32922908A67007F4F53 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		FA62E32B22908C81007F4F53 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FA62E331229130F7007F4F53 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		FAA6EE3422904029004D7B9E /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6EE3722904029004D7B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA6EE3922904029004D7B9E /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				FA62E3252290772C007F4F53 /* Context+Extension.swift */,
 				FA62E32722907AFA007F4F53 /* String+Error.swift */,
 				FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */,
+				FA62E331229130F7007F4F53 /* String+Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SugarRecord/SugarRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -419,6 +423,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SugarRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +447,7 @@
 				FA62E30D22904697007F4F53 /* Model.xcdatamodeld in Sources */,
 				FA62E32A22908A67007F4F53 /* EventsTableViewController.swift in Sources */,
 				FA62E31422904C5C007F4F53 /* AppData.swift in Sources */,
+				FA62E332229130F7007F4F53 /* String+Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
