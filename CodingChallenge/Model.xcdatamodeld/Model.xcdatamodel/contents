@@ -6,6 +6,7 @@
                 <entry key="JSONKeyPath" value="datetime_local"/>
             </userInfo>
         </attribute>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
             <userInfo>
                 <entry key="JSONKeyPath" value="id"/>
@@ -42,7 +43,7 @@
         </userInfo>
     </entity>
     <elements>
-        <element name="Event" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Event" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Performer" positionX="-45" positionY="27" width="128" height="75"/>
     </elements>
 </model>

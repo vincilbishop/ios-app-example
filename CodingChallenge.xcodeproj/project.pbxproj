@@ -20,6 +20,7 @@
 		FA62E32822907AFA007F4F53 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32722907AFA007F4F53 /* String+Error.swift */; };
 		FA62E32A22908A67007F4F53 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32922908A67007F4F53 /* EventsTableViewController.swift */; };
 		FA62E32C22908C81007F4F53 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32B22908C81007F4F53 /* EventTableViewCell.swift */; };
+		FA62E32E229109D0007F4F53 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */; };
 		FAA6EE3822904029004D7B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EE3722904029004D7B9E /* AppDelegate.swift */; };
 		FAA6EE3A22904029004D7B9E /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EE3922904029004D7B9E /* EventDetailsViewController.swift */; };
 		FAA6EE3D22904029004D7B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EE3B22904029004D7B9E /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		FA62E32722907AFA007F4F53 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
 		FA62E32922908A67007F4F53 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		FA62E32B22908C81007F4F53 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FAA6EE3422904029004D7B9E /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6EE3722904029004D7B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA6EE3922904029004D7B9E /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				FA62E3252290772C007F4F53 /* Context+Extension.swift */,
 				FA62E32722907AFA007F4F53 /* String+Error.swift */,
+				FA62E32D229109D0007F4F53 /* UIColor+Theme.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -398,7 +401,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireCoreData/AlamofireCoreData.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Groot/Groot.framework",
+				"${BUILT_PRODUCTS_DIR}/Hex/Hex.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SugarRecord/SugarRecord.framework",
@@ -410,7 +415,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireCoreData.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Groot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SugarRecord.framework",
@@ -432,6 +439,7 @@
 				FA62E32822907AFA007F4F53 /* String+Error.swift in Sources */,
 				FA62E3262290772C007F4F53 /* Context+Extension.swift in Sources */,
 				FAA6EE3822904029004D7B9E /* AppDelegate.swift in Sources */,
+				FA62E32E229109D0007F4F53 /* UIColor+Theme.swift in Sources */,
 				FA62E31B22905896007F4F53 /* Event+Extension.swift in Sources */,
 				FA62E30D22904697007F4F53 /* Model.xcdatamodeld in Sources */,
 				FA62E32A22908A67007F4F53 /* EventsTableViewController.swift in Sources */,

@@ -5,9 +5,11 @@ PODS:
     - Groot (~> 3.0)
   - AlamofireNetworkActivityLogger (2.4.0):
     - Alamofire (~> 4.8)
+  - FontAwesome.swift (1.7.0)
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
+  - Hex (6.0.0)
   - Nimble (8.0.1)
   - OHHTTPStubs/Core (8.0.0)
   - OHHTTPStubs/Default (8.0.0):
@@ -34,7 +36,9 @@ DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - AlamofireCoreData (~> 2.0.0)
   - AlamofireNetworkActivityLogger (~> 2.3)
+  - FontAwesome.swift (~> 1.7.0)
   - Groot (~> 3.0.1)
+  - Hex (~> 6.0.0)
   - Nimble (= 8.0.1)
   - OHHTTPStubs/Swift (~> 8.0.0)
   - Quick (= 2.1.0)
@@ -46,7 +50,9 @@ SPEC REPOS:
     - Alamofire
     - AlamofireCoreData
     - AlamofireNetworkActivityLogger
+    - FontAwesome.swift
     - Groot
+    - Hex
     - Nimble
     - OHHTTPStubs
     - Quick
@@ -58,7 +64,9 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireCoreData: 3205949bd789c2aa5e1cd8f4d703631c9d7ba09c
   AlamofireNetworkActivityLogger: 6d3398c692d2c5d83b0c58793537860aca1e383d
+  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
+  Hex: 3888e06c29fe725b12e33d434e31b06beb4112db
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
@@ -66,6 +74,6 @@ SPEC CHECKSUMS:
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
 
-PODFILE CHECKSUM: 13c37a1a463e7a96612490b7640551f79fca77e3
+PODFILE CHECKSUM: 9b9690631a2cf725d21487c481eaf4c1f485e0ea
 
 COCOAPODS: 1.6.1

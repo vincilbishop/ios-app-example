@@ -9,7 +9,9 @@ target 'CodingChallenge' do
   pod 'Alamofire', '~> 4.8.2'
   pod 'AlamofireCoreData', '~> 2.0.0'
   pod 'AlamofireNetworkActivityLogger', '~> 2.3'
+  pod 'FontAwesome.swift', '~> 1.7.0'
   pod 'Groot', '~> 3.0.1'
+  pod 'Hex', '~> 6.0.0'
   pod 'SDWebImage', '~> 5.0.3'
   pod 'SugarRecord/CoreData', '~> 3.1.2'
   
