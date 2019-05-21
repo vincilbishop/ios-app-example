@@ -1,4 +1,4 @@
-## HomeAway Coding Challenge
+## iOS App Example
 
 This example might help others understand how I think about building great software.
 
