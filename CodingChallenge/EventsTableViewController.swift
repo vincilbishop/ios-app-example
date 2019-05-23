@@ -14,8 +14,7 @@ import RxCocoa
 // class EventsTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
 class EventsTableViewController: UITableViewController, UISearchBarDelegate {
     
-    var observable: RequestObservable<Event>!
-    var fetchRequest: FetchRequest<Event>!
+
     let searchController = UISearchController(searchResultsController: nil)
     let disposeBag = DisposeBag()
     
@@ -51,6 +50,7 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
             .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .flatMapLatest { query -> Observable<[Event]> in
+                print(query)
                 if query.isEmpty {
                     return .just([])
                 }
@@ -80,13 +80,15 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
     func updateFetch(_ query: String? = nil, _ updateFromApi: Bool = true) -> Observable<[Event]> {
         
         let eventSubject = BehaviorSubject<[Event]>(value: [])
+        var observable: RequestObservable<Event>!
+        var fetchRequest: FetchRequest<Event>!
         
         do {
             
             guard let queryString = query else {
                 self.events = []
                 // self.tableView.reloadData()
-                eventSubject.on(.next([]))
+                // eventSubject.on(.next([]))
                 return eventSubject.asObserver()
             }
             
@@ -96,33 +98,32 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
             }
             
             // Update Local Fetch Request
-            self.fetchRequest = FetchRequest<Event>().filtered(with: NSPredicate(format: "title CONTAINS[cd] %@", queryString)).sorted(with: "datetime_local", ascending: true)
-            eventSubject.on(.next(try AppData.shared.db.fetch(self.fetchRequest)))
+            fetchRequest = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
+            eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
             
-            self.observable = AppData.shared.db.observable(request: self.fetchRequest)
-            self.observable.observe { changes in
+            observable = AppData.shared.db.observable(request: fetchRequest)
+            observable.observe { changes in
                 do {
                     switch (changes) {
                     case .initial( _):
-                        //self.events = try! AppData.shared.db.fetch(self.fetchRequest)
+                        //self.events = try! AppData.shared.db.fetch(fetchRequest)
                         //self.tableView.reloadData()
-                        eventSubject.on(.next(try AppData.shared.db.fetch(self.fetchRequest)))
+                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
                     case .update( _, _, _):
-                        // self.events = try! AppData.shared.db.fetch(self.fetchRequest)
+                        // self.events = try! AppData.shared.db.fetch(fetchRequest)
                         // self.tableView.reloadData()
-                        eventSubject.on(.next(try AppData.shared.db.fetch(self.fetchRequest)))
+                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
                     case .error( _):
-                        eventSubject.onError("Error observing CoreData")
+                        return
+                        // eventSubject.onError("Error observing CoreData")
                     }
                 } catch {
-                    eventSubject.onError("Error fetching in CoreData observer")
+                    // eventSubject.onError("Error fetching in CoreData observer")
                 }
                 
             }
-            
-            return eventSubject.asObserver()
         } catch {
-            eventSubject.onError("Error observing CoreData")
+            // eventSubject.onError("Error observing CoreData")
         }
         return eventSubject.asObserver()
         
