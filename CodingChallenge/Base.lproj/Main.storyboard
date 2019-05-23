@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-852" y="13"/>
         </scene>
-        <!--Events Table View Controller-->
+        <!--Events-->
         <scene sceneID="EeH-aJ-2kO">
             <objects>
-                <tableViewController id="Vr8-9M-PCC" customClass="EventsTableViewController" customModule="CodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Events" id="Vr8-9M-PCC" customClass="EventsTableViewController" customModule="CodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="xNd-xU-rKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                             <outlet property="delegate" destination="Vr8-9M-PCC" id="ZPc-R6-PUs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3bv-ak-e1e"/>
+                    <navigationItem key="navigationItem" title="Events" id="3bv-ak-e1e"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO0-Cd-E1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

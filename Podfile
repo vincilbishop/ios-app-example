@@ -14,6 +14,8 @@ target 'CodingChallenge' do
   pod 'SDWebImage', '~> 5.0.3'
   pod 'SugarRecord/CoreData', '~> 3.1.2'
   pod 'SwiftDate', '~> 6.0.3'
+  pod 'RxSwift', '~> 5.0.0'
+  pod 'RxCocoa', '~> 5.0.0'
   
   target 'CodingChallengeTests' do
     inherit! :search_paths
