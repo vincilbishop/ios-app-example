@@ -42,7 +42,6 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
             .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .flatMapLatest { query -> Observable<[Event]> in
-                print(query)
                 if query.isEmpty {
                     return .just([])
                 }
@@ -64,40 +63,30 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
         
         let eventSubject = BehaviorSubject<[Event]>(value: [])
         
-        do {
-            
-            guard let queryString = query else {
-                eventSubject.on(.next([]))
-                return eventSubject.asObserver()
-            }
-            
-            // Update from API
-            if (updateFromApi) {
-                Event.getEvents(queryString) { (response) in
-                    
-                    guard let events = response else {
-                        eventSubject.on(.next([]))
-                        return
-                    }
-                    // Return items that were returned from the API as the API's search results are superior to our local predicate
-                    let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF in %@", events.array)).sorted(with: "title", ascending: true)
-                    do {
-                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
-                    } catch {
-                        eventSubject.onError("Error after Event API call")
-                    }
+        guard let queryString = query else {
+            eventSubject.on(.next([]))
+            return eventSubject.asObserver()
+        }
+        
+        // Update from API
+        if (updateFromApi) {
+            Event.getEvents(queryString) { (response) in
+                
+                guard let events = response else {
+                    eventSubject.on(.next([]))
+                    return
+                }
+                
+                let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF in %@", events.array)).sorted(with: "title", ascending: true)
+                do {
+                    eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
+                } catch {
+                    eventSubject.onError("Error after Event API call")
                 }
             }
-            
-            // Try to return local results where the title matches the query string while the user waits for API results
-//            let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
-//            eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
-            
-        } catch {
-            eventSubject.onError("Error after local Event fetch")
         }
-        return eventSubject.asObserver()
         
+        return eventSubject.asObserver()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -111,6 +100,4 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
         let cell = sender as! EventTableViewCell
         vc.event = cell.event!
     }
-    
 }
-
