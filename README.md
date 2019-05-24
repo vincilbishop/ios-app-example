@@ -33,6 +33,6 @@ To build the project:
 * `pod install`
 * `Open CodingChallenge.xcworkspace`
 
-#### Screenshots
+#### Screens
 
 ![App](examples/example.gif)
