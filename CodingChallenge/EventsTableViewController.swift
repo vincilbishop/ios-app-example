@@ -90,8 +90,8 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
             }
             
             // Try to return local results where the title matches the query string while the user waits for API results
-            let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
-            eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
+//            let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
+//            eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
             
         } catch {
             eventSubject.onError("Error after local Event fetch")
