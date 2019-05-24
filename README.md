@@ -35,4 +35,4 @@ To build the project:
 
 #### Screenshots
 
-![Search screen](examples/search.png) ![Details screen](examples/details.png)
+![App](examples/example.gif)
