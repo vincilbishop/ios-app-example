@@ -11,24 +11,16 @@ import SugarRecord
 import RxSwift
 import RxCocoa
 
-// class EventsTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
 class EventsTableViewController: UITableViewController, UISearchBarDelegate {
     
-
     let searchController = UISearchController(searchResultsController: nil)
     let disposeBag = DisposeBag()
+    var observable: RequestObservable<Event>!
     
-    
-    var events: [Event] = []
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        
-        
-        // self.tableView.tableHeaderView = self.searchController.searchBar
-        // self.searchController.searchResultsUpdater = self
+        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -62,110 +54,56 @@ class EventsTableViewController: UITableViewController, UISearchBarDelegate {
         searchResults
             .bind(to: tableView.rx.items(cellIdentifier: "EventTableViewCell")) {
                 (index, event: Event, cell: EventTableViewCell) in
-                //let eventCell = cell as! EventTableViewCell
                 cell.configureWithEvent(event)
-                //                cell.textLabel?.text = repository.name
-                //                cell.detailTextLabel?.text = repository.url
             }
             .disposed(by: disposeBag)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        // elf.navigationController?.setNavigationBarHidden(false, animated: animated)
-        // self.searchController.dismiss(animated: false, completion: nil)
     }
     
     // MARK: Search
     func updateFetch(_ query: String? = nil, _ updateFromApi: Bool = true) -> Observable<[Event]> {
         
         let eventSubject = BehaviorSubject<[Event]>(value: [])
-        var observable: RequestObservable<Event>!
-        var fetchRequest: FetchRequest<Event>!
         
         do {
             
             guard let queryString = query else {
-                self.events = []
-                // self.tableView.reloadData()
-                // eventSubject.on(.next([]))
+                eventSubject.on(.next([]))
                 return eventSubject.asObserver()
             }
             
             // Update from API
             if (updateFromApi) {
-                Event.getEvents(queryString)
+                Event.getEvents(queryString) { (response) in
+                    
+                    guard let events = response else {
+                        eventSubject.on(.next([]))
+                        return
+                    }
+                    // Return items that were returned from the API as the API's search results are superior to our local predicate
+                    let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF in %@", events.array)).sorted(with: "title", ascending: true)
+                    do {
+                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
+                    } catch {
+                        eventSubject.onError("Error after Event API call")
+                    }
+                }
             }
             
-            // Update Local Fetch Request
-            fetchRequest = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
+            // Try to return local results where the title matches the query string while the user waits for API results
+            let fetchRequest: FetchRequest<Event>! = FetchRequest<Event>().filtered(with: NSPredicate(format: "SELF.title CONTAINS[c] %@", queryString)).sorted(with: "title", ascending: true)
             eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
             
-            observable = AppData.shared.db.observable(request: fetchRequest)
-            observable.observe { changes in
-                do {
-                    switch (changes) {
-                    case .initial( _):
-                        //self.events = try! AppData.shared.db.fetch(fetchRequest)
-                        //self.tableView.reloadData()
-                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
-                    case .update( _, _, _):
-                        // self.events = try! AppData.shared.db.fetch(fetchRequest)
-                        // self.tableView.reloadData()
-                        eventSubject.on(.next(try AppData.shared.db.fetch(fetchRequest)))
-                    case .error( _):
-                        return
-                        // eventSubject.onError("Error observing CoreData")
-                    }
-                } catch {
-                    // eventSubject.onError("Error fetching in CoreData observer")
-                }
-                
-            }
         } catch {
-            // eventSubject.onError("Error observing CoreData")
+            eventSubject.onError("Error after local Event fetch")
         }
         return eventSubject.asObserver()
         
     }
     
-    /*
-     func updateSearchResults(for searchController: UISearchController) {
-     if let searchText = searchController.searchBar.tex, !searchText.isEmpty {
-     self.updateFetch(searchController.searchBar.text, true)
-     } else {
-     self.updateFetch()
-     }
-     }
-     
-     func searchBar(_ searchBar: UISearchBar,
-     textDidChange searchText: String) {
-     if let searchText = searchBar.text, !searchText.isEmpty {
-     self.updateFetch(searchBar.text, true)
-     } else {
-     self.updateFetch()
-     }
-     }
-     */
-    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
     }
     
-    // MARK: UITableView
-    /*
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.events.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: EventTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
-        
-        cell.configureWithEvent(self.events[indexPath.row])
-        
-        return cell
-    }
-    */
     // This function is called before the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
